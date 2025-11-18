@@ -10,5 +10,5 @@ int main() {
     int n;
     cout << "Enter the Number :: ";
     cin >> n;
-    cout << fib(n);
+    cout << n << "th fibonacci Number is :: " << fib(n) << endl;
 }
