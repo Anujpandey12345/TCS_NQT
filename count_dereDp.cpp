@@ -1,4 +1,6 @@
 // 108: Count derangements || DP Series -- > Recursion Solution + Memoization
+// TC-O(N)
+// SC-O(N) + O(N)
 #include <bits/stdc++.h>
 #define MOD 1000000007
 using namespace std;
