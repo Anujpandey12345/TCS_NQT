@@ -1,7 +1,0 @@
-,0,1,2,3
-0,1,Anuj,Male,21
-1,2,snuj,Male,211
-2,3,Lnuj,Male,21
-3,4,Pnuj,Male,2112
-4,5,Unuj,Female,121
-5,6,Tnuj,Fale,21

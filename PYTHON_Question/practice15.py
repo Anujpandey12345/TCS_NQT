@@ -90,6 +90,106 @@
 # d = pd.DataFrame(std_data)
 # d.to_csv("Student_data.txt")
 
+# import pandas as pd
+# csv_1 = pd.read_csv("Student_data.txt")
+# print(csv_1)
+
+# import numpy as np
+# array1 = np.arange(1, 10).reshape((3, 3))
+# print(array1)
+
+
+# file = open("Student_data.txt", "r")
+# print(file.read())
+# print("\n")
+# print(file.readline)
+# print(file.readlines)
+# file.close()   
+
+
+# with open("python.txt", "r") as f:
+#     print(f.read())
+# with open("New_Student_data.txt", "r") as f:
+#     f.seek(16)
+#     data = f.read(10)
+#     print(data)
+#     data1 = f.tell()
+#     print(data1)
+
+
+# with open("New_Student_data.txt", "w") as f:
+#     f.write("Hello Duniya !! This is Anuj Bhai")
+#     f.truncate(15)
+
+
+# with open("New_Student_data.text", "r") as f:
+#     print(f.read())
+
+
+# def solve(age):
+#     if age <= 0:
+#         return "You are not born"
+#     elif 1 <= age <= 10:
+#         return "You are Child"
+#     elif 11 <= age <= 18:
+#         return "You are teenager"
+#     elif 19 <= age <= 45:
+#         return "You are adult"
+#     else:
+#         return "You are Old"
+# try:
+#     age = int(input("Enter Your Age :: "))
+# except Exception as err:
+#     print(f"Please enter a valid integer for age and error is {err}")
+# else:
+#     print(solve(age))
+
+
+# def solve(x):
+#     x = x + 5
+#     print("Inside", x)
+
+# a = 10
+# solve(a)
+# print("Outside ", a)
+
+
+# def solve(list):
+#     list.append(10)
+#     print("Inside Function", list)
+# list = [12, 23, 34, 45, 56]
+# solve(list)
+# print("Outside the Function ", list)
+
+
+
+
+
+
+# def fib(n):
+#     #Base Condition
+#     if n == 0 or n == 1:
+#         return n
+#     # Recursive Call
+#     return fib(n-2)+fib(n-1)
+# n = int(input("Enter the Number :: "))
+# for i in range(n):
+#     print(fib(i), end=" ")
+
+
+# print("\n")
+
+# dict = {1:21, 2:32, 3:12}
+# for key in dict:
+#     print(f"{key} : {dict[key]}")
+    
+
+# import math
+# num = int(input("Enter the Number :- "))
+# sqrt_num = math.sqrt(num)
+# print("\n", sqrt_num)
+
+
 import pandas as pd
-csv_1 = pd.read_csv("Student_data.txt")
+csv_1 = pd.read_csv("test.csv")
 print(csv_1)
