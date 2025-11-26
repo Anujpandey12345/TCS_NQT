@@ -48,9 +48,11 @@
 # d = pd.read_csv("test2.csv")
 # print(d)
 
-def solve(dic):
-    for i in dic:
-        print(i, dic[i])
+# def solve(dic):
+#     for i in dic:
+#         print(i, dic[i])
 
-dic = {1:"Anuj", 2:"Arbaz", 3:"Pukar", 4:"Ankit"}
-solve(dic)
+# dic = {1:"Anuj", 2:"Arbaz", 3:"Pukar", 4:"Ankit"}
+# solve(dic)
+
+
