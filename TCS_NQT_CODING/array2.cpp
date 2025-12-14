@@ -28,12 +28,12 @@ int main() {
 
 
 
-// =======================================================
-// TEST CASES FOR FINDING THE LARGEST ELEMENT IN AN ARRAY
-// (Each test case is explained clearly)
-// =======================================================
+// // =======================================================
+// // TEST CASES FOR FINDING THE LARGEST ELEMENT IN AN ARRAY
+// // (Each test case is explained clearly)
+// // =======================================================
 
-// TC-01: Normal array with positive, negative and zero values
+// // TC-01: Normal array with positive, negative and zero values
 // {2, 5, 1, 3, 0, 99, -1}     // Expected: 99
 
 // // TC-02: Array sorted in ascending order
