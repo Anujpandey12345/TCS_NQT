@@ -73,34 +73,65 @@ import matplotlib.pyplot as plt
 
 
 
-Food = ["Meat", "Banana", "Avacados", "SweetPotatos", "Spinch"]
-Calories = [250, 130, 140, 120, 20]
-Potassium = [40, 55, 20, 30, 40]
-Fat = [8, 5, 3, 6, 1]
+# Food = ["Meat", "Banana", "Avacados", "SweetPotatos", "Spinch"]
+# Calories = [250, 130, 140, 120, 20]
+# Potassium = [40, 55, 20, 30, 40]
+# Fat = [8, 5, 3, 6, 1]
 
-# Plot Calories
-plt.figure()
-plt.bar(Food, Calories)
-plt.xlabel("Food Category")
-plt.ylabel("Calories")
-plt.title("Calories is Diffrent food Items")
-plt.show()
-
-
-# Plot Potassium
-plt.figure()
-plt.bar(Food, Potassium)
-plt.xlabel("Food Category")
-plt.ylabel("Potassium")
-plt.title("Potassium is Diffrent food items")
-plt.show()
+# # Plot Calories
+# plt.figure()
+# plt.bar(Food, Calories)
+# plt.xlabel("Food Category")
+# plt.ylabel("Calories")
+# plt.title("Calories is Diffrent food Items")
+# plt.show()
 
 
-# Plot Fat
+# # Plot Potassium
+# plt.figure()
+# plt.bar(Food, Potassium)
+# plt.xlabel("Food Category")
+# plt.ylabel("Potassium")
+# plt.title("Potassium is Diffrent food items")
+# plt.show()
 
-plt.figure()
-plt.bar(Food, Fat)
-plt.xlabel("Food Category")
-plt.ylabel("Fat")
-plt.title("Fat is Different food items")
-plt.show()
+
+# # Plot Fat
+
+# plt.figure()
+# plt.bar(Food, Fat)
+# plt.xlabel("Food Category")
+# plt.ylabel("Fat")
+# plt.title("Fat is Different food items")
+# plt.show()
+
+
+
+
+
+
+# num1 = int(input("Enter the Number1 :: "))
+# num2 = int(input("Enter the Number2 :: "))
+
+# try:
+#     result = num1/num2
+#     print(result)
+# except Exception as err:
+#     print(f"One error occured {err}")
+# else:
+#     print(f"Division is done")
+
+
+
+
+
+age = int(input("Enter the age :: "))
+try:
+    if age < 10 or age > 100:
+        raise ValueError("Sorry you Can't do this")
+    else:
+        print("Welcome to voting club ")
+
+except Exception as err:
+    print(f"An error Occured {err}")
+print("Club open Soon")
