@@ -24,7 +24,7 @@ import pandas as pd
 #     print(name, ":", avg)
 
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # # Data
 # food = ["Meat", "Banana", "Avocado", "Sweet Potato", "Spinach", "Watermelon", "Beans"]
@@ -125,13 +125,41 @@ import matplotlib.pyplot as plt
 
 
 
-age = int(input("Enter the age :: "))
-try:
-    if age < 10 or age > 100:
-        raise ValueError("Sorry you Can't do this")
-    else:
-        print("Welcome to voting club ")
+# age = int(input("Enter the age :: "))
+# try:
+#     if age < 10 or age > 100:
+#         raise ValueError("Sorry you Can't do this")
+#     else:
+#         print("Welcome to voting club ")
 
-except Exception as err:
-    print(f"An error Occured {err}")
-print("Club open Soon")
+# except Exception as err:
+#     print(f"An error Occured {err}")
+# print("Club open Soon")
+
+
+
+
+
+
+import pandas as pd
+import numpy as np
+# lables = ["a", "b", "c", "d"]
+# list = [10, 20, 30, 40]
+# dict = {"a":10, "b":20, "c":30, "d":40}
+# my_array = np.array([10, 20, 30, 40])
+
+
+# data = pd.Series(list, index=lables)
+# print(data)
+# print(data['a'])
+
+
+# dis = {"s":12, "w":12, "u":90}
+# data = pd.DataFrame(dis)
+# print(data)
+
+list = [[12, 13, 14], [15, 16, 17], [18, 19, 20]]
+data = np.array(list)
+print(data)
+data1 = np.zeros(10)
+print(data1)
