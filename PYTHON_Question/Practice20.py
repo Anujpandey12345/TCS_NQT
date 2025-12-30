@@ -246,7 +246,7 @@ import numpy as np
 # language = ["Python", "Java", "JavaScript", "C", "C++", "Ruby"]
 # Popularity = [100, 90, 80, 10, 60, 50]
 
-# plt.figure()
+# plt.plot()
 # plt.bar(language, Popularity)
 # plt.xlabel("Language's")
 # plt.ylabel("Popularity of Language's")
@@ -256,3 +256,69 @@ import numpy as np
 
 
 
+# data = pd.read_csv("students.csv")
+# print("Average of the CSV file")
+# for i in range(len(data)):
+#     name = data["Name"][i]
+#     marks = pd.Series([
+#         data['Marks1'][i],
+#         data["Marks2"][i],
+#         data["Marks3"][i]
+#     ])
+#     avg = marks.mean()
+#     print(name, ":", avg)
+
+
+
+# data = {
+#     "Name":["Anuj","Anuj1","Anuj2","ANuj3"],
+#     "Age":[12, 34, 5, 6]
+# }
+# df = pd.DataFrame(data)
+# df.to_csv("Hello.csv")
+
+
+# data = pd.read_csv("students.csv")
+# thresold =40
+# result = data[data["Marks1"] > thresold]
+# print(result)
+
+
+
+# data = pd.read_csv("cities.csv")
+# last_column = data.iloc[:, -1].values
+# remaing_data = data.iloc[:, :-1].values
+# plt.plot(data.iloc[:, 0], data.iloc[:, 1])
+# plt.xlabel("City")
+# plt.ylabel("Population")
+# plt.title("City population graph")
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data = pd.read_csv("cities.csv")
+last_column = data.iloc[:, -1].values
+remaing_data = data.iloc[:, :-1].values
+
+plt.plot(data.iloc[:, 0], data.iloc[:, 1])
+plt.xlabel("City")
+plt.ylabel("Population")
+plt.title("City VS Population")
+plt.show()
