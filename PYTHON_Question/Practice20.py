@@ -187,14 +187,72 @@ import numpy as np
 # print(result)
 
 
-with open("text22.txt", "w") as f:
-    f.write("Hello duniya ! how are you")
-    f.truncate(19)
+# with open("text22.txt", "w") as f:
+#     f.write("Hello duniya ! how are you")
+#     f.truncate(19)
 
 
-with open("text22.txt", "r") as f:
-    content = f.read()
-    print(content)
+# with open("text22.txt", "r") as f:
+#     content = f.read()
+#     print(content)
+
+# def fac(num):
+#     if num == 0 or num == 1:
+#         return 1
+#     return num * fac(num-1)
+
+
+# num = int(input("Enter the Number :: "))
+# ans = fac(num)
+# print(ans)
+
+
+
+
+
+# def fib(num):
+#     if num == 0:
+#         return 0
+#     if num == 1:
+#         return 1
+#     return fib(num-1)+fib(num-2)
+    
+# num = 10
+# ans = fib(num)
+# print(ans)
+
+
+# def chnage(num):
+#     num = num + 5
+#     print("inside ", num)
+# num = 10
+# chnage(num)
+
+# print("Outside the ", num)
+
+
+# def chnage1(num1):
+#     num1.append(80)
+#     print("inside", num1)
+    
+# num1 = [10,20,30]
+# chnage1(num1)
+# print("Outside", num1)
+
+
+
+# import matplotlib.pyplot as plt
+
+# language = ["Python", "Java", "JavaScript", "C", "C++", "Ruby"]
+# Popularity = [100, 90, 80, 10, 60, 50]
+
+# plt.figure()
+# plt.bar(language, Popularity)
+# plt.xlabel("Language's")
+# plt.ylabel("Popularity of Language's")
+# plt.title("This is Graph for Language's Popularity")
+# plt.show()
+
 
 
 
