@@ -141,8 +141,8 @@ import pandas as pd
 
 
 
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 # lables = ["a", "b", "c", "d"]
 # list = [10, 20, 30, 40]
 # dict = {"a":10, "b":20, "c":30, "d":40}
@@ -241,17 +241,17 @@ import numpy as np
 
 
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-# language = ["Python", "Java", "JavaScript", "C", "C++", "Ruby"]
-# Popularity = [100, 90, 80, 10, 60, 50]
+language = ["Python", "Java", "JavaScript", "C", "C++", "Ruby"]
+Popularity = [100, 90, 80, 10, 60, 50]
 
-# plt.plot()
-# plt.bar(language, Popularity)
-# plt.xlabel("Language's")
-# plt.ylabel("Popularity of Language's")
-# plt.title("This is Graph for Language's Popularity")
-# plt.show()
+plt.figure()
+plt.fill_between(language, Popularity)
+plt.xlabel("Language's")
+plt.ylabel("Popularity of Language's")
+plt.title("This is Graph for Language's Popularity")
+plt.show()
 
 
 
@@ -300,6 +300,70 @@ import numpy as np
 
 
 
+# age = int(input("Enter the Number :: "))
+# try:
+#     if age < 10 or age > 18:
+#         raise ValueError("Sorry you can't get addmission")
+#     else:
+#         print("Welcome to the college life")
+# except Exception as err:
+#     print(f"An error occured {err}")
+# else:
+#     print("No error found")
+
+
+
+
+
+
+import numpy as np
+
+import pandas as pd
+# label = ["A", "B", "C", "D", "E"]
+# arr = np.array([19, 29 , 17 , 82, 82])
+# dict = {"A":78, "B":89, "C":0, "D":88}
+# data = pd.Series(arr, index=label)
+
+# data1 = ([data["A"] < data["D"]])
+# print(data1)
+
+
+
+# list = [
+#     ("Anuj", 54, "Kanpur"),
+#     ("Arbaz", 99, "Bihar"),
+#     ("Raju", 999, "Hackerpurva")
+# ]
+# data = pd.DataFrame(list, columns=["Name", "Age", "Location"])
+# print(data)
+
+
+
+# data = pd.read_csv("students.csv")
+# print(data.head(1))
+# print("\n")
+# print(data.tail(1))
+# print("\n")
+
+# print(data.dtypes)
+# print("\n")
+
+# print(data.columns)
+# print("\n")
+
+# print(data.rpow)
+# print("\n")
+
+# print(data.shape)
+# print("\n")
+
+# print(data.size)
+# print("\n")
+
+# print(data.values)
+# print("\n")
+
+# print(data.index)
 
 
 
@@ -313,12 +377,15 @@ import numpy as np
 
 
 
-data = pd.read_csv("cities.csv")
-last_column = data.iloc[:, -1].values
-remaing_data = data.iloc[:, :-1].values
 
-plt.plot(data.iloc[:, 0], data.iloc[:, 1])
-plt.xlabel("City")
-plt.ylabel("Population")
-plt.title("City VS Population")
-plt.show()
+
+
+# data = pd.read_csv("cities.csv")
+# last_column = data.iloc[:, -1].values
+# remaing_data = data.iloc[:, :-1].values
+
+# plt.plot(data.iloc[:, 0], data.iloc[:, 1])
+# plt.xlabel("City")
+# plt.ylabel("Population")
+# plt.title("City VS Population")
+# plt.show()
