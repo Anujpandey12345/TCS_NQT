@@ -158,8 +158,43 @@ import numpy as np
 # data = pd.DataFrame(dis)
 # print(data)
 
-list = [[12, 13, 14], [15, 16, 17], [18, 19, 20]]
-data = np.array(list)
-print(data)
-data1 = np.zeros(10)
-print(data1)
+# list = [[12, 13, 14], [15, 16, 17], [18, 19, 20]]
+# d = pd.DataFrame(list)
+# print(d)
+
+# d.to_csv("Test11.csv")
+
+
+# data = pd.read_csv("students.csv")
+# threshold = 70
+# result = data[data['Marks1']  > threshold]
+# print(result)
+
+
+
+# with open("test.txt", "w") as fl:
+#     content = fl.write("Hello Python")
+#     print(content)
+
+# file = open("test.txt", "r")
+# content = file.read()
+# file.close()
+# reverse_content = content[::-1]
+
+# result = ",".join(reverse_content)
+
+
+# print(result)
+
+
+with open("text22.txt", "w") as f:
+    f.write("Hello duniya ! how are you")
+    f.truncate(19)
+
+
+with open("text22.txt", "r") as f:
+    content = f.read()
+    print(content)
+
+
+
