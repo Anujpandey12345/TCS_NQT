@@ -10,18 +10,18 @@ import pandas as pd
 # df.to_csv("students.csv", index=False)
 # print("csv file created successfully")
 
-# data = pd.read_csv("students.csv")
-# print("Avarage marks of the students")
-# for i in range(len(data)):
-#     name = data['Name'][i]
-#     marks = pd.Series([
-#         data['Marks1'][i],
-#         data['Marks2'][i],
-#         data['Marks3'][i]
-#     ])
-#     avg = marks.mean()
+data = pd.read_csv("students.csv")
+print("Avarage marks of the students")
+for i in range(len(data)):
+    name = data['Name'][i]
+    marks = pd.Series([
+        data['Marks1'][i],
+        data['Marks2'][i],
+        data['Marks3'][i]
+    ])
+    avg = marks.sum()
 
-#     print(name, ":", avg)
+    print(name, ":", avg)
 
 
 # import matplotlib.pyplot as plt
@@ -241,20 +241,6 @@ import pandas as pd
 
 
 
-import matplotlib.pyplot as plt
-
-language = ["Python", "Java", "JavaScript", "C", "C++", "Ruby"]
-Popularity = [100, 90, 80, 10, 60, 50]
-
-plt.figure()
-plt.fill_between(language, Popularity)
-plt.xlabel("Language's")
-plt.ylabel("Popularity of Language's")
-plt.title("This is Graph for Language's Popularity")
-plt.show()
-
-
-
 
 # data = pd.read_csv("students.csv")
 # print("Average of the CSV file")
@@ -316,9 +302,9 @@ plt.show()
 
 
 
-import numpy as np
+# import numpy as np
 
-import pandas as pd
+# import pandas as pd
 # label = ["A", "B", "C", "D", "E"]
 # arr = np.array([19, 29 , 17 , 82, 82])
 # dict = {"A":78, "B":89, "C":0, "D":88}
