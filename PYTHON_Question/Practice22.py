@@ -183,14 +183,30 @@
 
 
 
-import pandas as pd
+# import pandas as pd
+# import matplotlib.pyplot as plt
+
+# data = pd.read_csv("cities.csv")
+# last_column = data.iloc[:, -1].values
+# remaing_data = data.iloc[:, :-1].values
+# plt.plot(data.iloc[:, 0], data.iloc[:, 1])
+# plt.xlabel("City")
+# plt.ylabel("Populations")
+# plt.title("Data of the CIties Polulation")
+# plt.show()
+
+
+
+
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("cities.csv")
-last_column = data.iloc[:, -1].values
-remaing_data = data.iloc[:, :-1].values
-plt.plot(data.iloc[:, 0], data.iloc[:, 1])
-plt.xlabel("City")
-plt.ylabel("Populations")
-plt.title("Data of the CIties Polulation")
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+plt.plot(x, y)
+
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Plot')
+
 plt.show()
