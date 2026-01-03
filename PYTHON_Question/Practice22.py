@@ -210,3 +210,12 @@ plt.ylabel('Y-axis')
 plt.title('Simple Plot')
 
 plt.show()
+
+
+import numpy as np
+
+p1 = np.array((1, 2, 3))
+p2 = np.array((1, 1, 1))
+
+d = np.linalg.norm(p1 - p2)
+print(d)
