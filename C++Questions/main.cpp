@@ -160,3 +160,69 @@ head.next.next.next.next = new Node(1);
 let key = 1;
 
 console.log( count(head, key));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Javascript program for converting singly linked list
+// into circular linked list.
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+// Function that converts singly linked 
+// list into circular linked list
+function circular(curr, head) {
+    
+    // if last node, then point next ptr
+    // to head Node
+    if (curr.next == null) {
+        curr.next = head;
+        return;
+    }
+    
+    // otherwise move to the 
+    // next node
+    circular(curr.next, head);
+}
+
+function printList(head) {
+    let curr = head;
+    
+    do {
+        console.log(curr.data + " ");
+        curr = curr.next;
+    } while (curr !== head);
+}
+
+// create a hard coded list
+// 10->12->14->16
+let head = new Node(10);
+head.next = new Node(12);
+head.next.next = new Node(14);
+head.next.next.next = new Node(16);
+
+circular(head, head);
+
+printList(head);
