@@ -276,3 +276,47 @@ head.next.next.next.next = head;
 
 // Check again if the linked list is circular
 console.log(isCircular(head) ? "Yes" : "No");
+
+
+
+
+
+
+
+
+
+// JavaScript program to count number 
+// of nodes in a circular linked list
+class Node {
+    constructor(newData) {
+        this.data = newData;
+        this.next = null;
+    }
+}
+
+// Function to count nodes in a 
+// given Circular linked list
+function countNodes(head) {
+    var curr = head;
+    var result = 0;
+
+    // return 0 for empty lists
+    if (head == null) return 0;
+
+    do {
+        curr = curr.next;
+        result++;
+    } while (curr != head);
+
+    return result;
+}
+
+// Create list: 1->2->3->4->5--->1
+let head = new Node(1);
+head.next = new Node(2);
+head.next.next = new Node(3);
+head.next.next.next = new Node(4);
+head.next.next.next.next = new Node(5);
+head.next.next.next.next.next = head;
+
+console.log(countNodes(head));
