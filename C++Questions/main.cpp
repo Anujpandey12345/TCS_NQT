@@ -389,3 +389,133 @@ let position = 3;
 head = deleteNode(head, position);
 
 printList(head);
+
+
+
+
+// Javascript program to find union and intersection of two 
+// unsorted linked lists
+
+class Node {
+    constructor(x) {
+        this.data = x;
+        this.next = null;
+    }
+}
+
+// Function to check if a value is present in the linked
+// list
+function isPresent(head, value) {
+    let curr = head;
+    while (curr !== null) {
+        if (curr.data === value) {
+            return true;
+        }
+        curr = curr.next;
+    }
+    return false;
+}
+
+// Function to find the union of two linked lists
+function findUnion(head1, head2) {
+    let result = null;
+    let tail = null;
+    let curr1 = head1, curr2 = head2;
+
+    // Insert all elements from the first list into the
+    // result list
+    while (curr1 !== null) {
+        if (!isPresent(result, curr1.data)) {
+        
+            let newNode = new Node(curr1.data);
+            if (result === null) {
+                result = newNode;
+                tail = result;
+            }
+            else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        curr1 = curr1.next;
+    }
+
+    // Insert elements from the second list into the
+    // result list if they are not already present
+    while (curr2 !== null) {
+        if (!isPresent(result, curr2.data)) {
+            let newNode = new Node(curr2.data);
+            if (result === null) {
+                result = newNode;
+                tail = result;
+            }
+            else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        curr2 = curr2.next;
+    }
+
+    return result;
+}
+
+// Function to find the intersection of two linked lists
+// using brute force
+function findIntersection(head1, head2) {
+    let result = null;
+    let tail = null;
+    let curr1 = head1, curr2 = head2;
+
+    // For each element in the first list, check if it is
+    // present in the second list
+    while (curr1 !== null) {
+        if (isPresent(curr2, curr1.data)
+            && !isPresent(result, curr1.data)) {
+            let newNode = new Node(curr1.data);
+            if (result === null) {
+                result = newNode;
+                tail = result;
+            }
+            else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        curr1 = curr1.next;
+    }
+
+    return result;
+}
+
+function printList(head) {
+    let curr = head;
+    while (curr !== null) {
+        console.log(curr.data + " ");
+        curr = curr.next;
+    }
+    console.log();
+}
+
+// Insert elements into the first linked list
+// 10 -> 15 -> 4 -> 20
+let head1 = new Node(10);
+head1.next = new Node(15);
+head1.next.next = new Node(4);
+head1.next.next.next = new Node(20);
+
+// Insert elements into the second linked list
+// 8 -> 4 -> 2 -> 10
+let head2 = new Node(8);
+head2.next = new Node(4);
+head2.next.next = new Node(2);
+head2.next.next.next = new Node(10);
+
+let unionList = findUnion(head1, head2);
+let intersectionList = findIntersection(head1, head2);
+
+console.log("Union: ");
+printList(unionList);
+
+console.log("Intersection: ");
+printList(intersectionList);
